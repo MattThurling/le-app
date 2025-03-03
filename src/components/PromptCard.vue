@@ -16,10 +16,7 @@
       <!-- Action Buttons -->
       <div class="flex items-center gap-3 mt-3">
         <!-- ChatGPT Button -->
-        <button class="btn btn-primary btn-sm" @click="openChatGPT">
-          <LucideClipboard class="w-4 h-4" />
-          ChatGPT
-        </button>
+        <button class="btn btn-primary btn-sm" @click="openChatGPT">ChatGPT</button>
 
         <!-- Copy Button -->
         <LucideClipboardCopy class="w-4 h-4" @click="copyToClipboard" />
