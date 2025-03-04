@@ -4,8 +4,9 @@
     <header class="text-center mt-10 mx-10">
       <h1 class="text-4xl mb-10">Large English</h1>
       <p>
-        A new resource site for English language learners, featuring serious exam preparation drills
-        and daft videos!
+        A collection of AI Drills to help you practise your English. Open directly in ChatGPT or
+        copy the prompt to use in your app of choice. Remember kids, AI makes mistakes and has no
+        soul or feelings, so feel free to argue with it!
       </p>
     </header>
 

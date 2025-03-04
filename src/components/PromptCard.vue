@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card card-sm border border-gray-700">
     <!-- Image Section -->
     <figure v-if="prompt.image_url">
       <img
@@ -16,10 +16,10 @@
       <!-- Action Buttons -->
       <div class="flex items-center gap-3 mt-3">
         <!-- ChatGPT Button -->
-        <button class="btn btn-primary btn-sm" @click="openChatGPT">ChatGPT</button>
+        <button class="btn btn-primary" @click="openChatGPT">Open in ChatGPT</button>
 
         <!-- Copy Button -->
-        <LucideClipboardCopy class="w-4 h-4" @click="copyToClipboard" />
+        <LucideClipboardCopy class="" @click="copyToClipboard" />
 
         <!-- Copy Success Message -->
         <span v-if="copied" class="text-xs text-green-500">Copied!</span>
