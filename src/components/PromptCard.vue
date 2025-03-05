@@ -19,7 +19,7 @@
         <button class="btn btn-primary" @click="openChatGPT">Open in ChatGPT</button>
 
         <!-- Copy Button -->
-        <LucideClipboardCopy class="" @click="copyToClipboard" />
+        <LucideClipboardCopy class="cursor-pointer" @click="copyToClipboard" />
 
         <!-- Copy Success Message -->
         <span v-if="copied" class="text-xs text-green-500">Copied!</span>
