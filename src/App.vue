@@ -54,7 +54,7 @@ export default defineComponent({
 
     const fetchPrompts = async () => {
       try {
-        const response = await axios.get('https://le-api.onrender.com/api/prompts/')
+        const response = await axios.get('https://le-api-kpqgwjcf3q-nw.a.run.app/api/prompts/')
         prompts.value = response.data
       } catch (error) {
         console.error('API call failed:', error)
