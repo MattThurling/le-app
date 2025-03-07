@@ -4,7 +4,7 @@
       <!-- Header Section -->
       <header class="text-center">
         <h1 class="text-4xl font-bold mb-6">Large English</h1>
-        <p class="text-gray-100">
+        <p class="text-base-content">
           A collection of AI Drills to help you practise your English. Open them directly in ChatGPT
           or copy the prompt to use in your app of choice. Remember kids, AI makes mistakes and has
           no soul or feelings, so feel free to argue with it!
