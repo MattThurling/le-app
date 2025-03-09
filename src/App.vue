@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen bg-base-200 flex justify-center">
+  <div class="min-h-screen bg-base-100 flex justify-center">
     <div class="container max-w-4xl mx-auto px-6">
       <!-- Navbar -->
-      <nav class="navbar bg-base-100 shadow-lg">
+      <nav class="navbar bg-base-100">
         <div class="container mx-auto">
           <div class="flex-none">
             <ul class="menu menu-horizontal px-1">

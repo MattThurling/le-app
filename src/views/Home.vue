@@ -1,8 +1,12 @@
 <script>
 import { defineComponent, ref, computed, onMounted } from 'vue'
+import YouTubeEmbed from '../components/YouTubeEmbed.vue'
 import axios from 'axios'
 
 export default defineComponent({
+  components: {
+    YouTubeEmbed,
+  },
   setup() {
     const page = ref([])
 
@@ -28,8 +32,14 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.content }}</p>
-  </div>
+  <!-- Header Section -->
+  <header class="text-center">
+    <h1 class="text-4xl font-bold mb-6">Large English</h1>
+  </header>
+
+  <p class="text-base-content my-4">
+    {{ page.content }}
+  </p>
+
+  <YouTubeEmbed :videoId="page.video" />
 </template>
