@@ -8,6 +8,7 @@
             <ul class="menu menu-horizontal px-1">
               <li><router-link to="/" class="btn btn-ghost">Home</router-link></li>
               <li><router-link to="/prompts" class="btn btn-ghost">Prompts</router-link></li>
+              <li><router-link to="/posts" class="btn btn-ghost">Blog</router-link></li>
             </ul>
           </div>
         </div>

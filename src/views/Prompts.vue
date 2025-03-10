@@ -15,7 +15,9 @@
   <div class="text-center">
     <p>
       For private English lessons email:
-      <a :href="decodedEmailLink" class="text-gray-400 hover:underline">{{ decodedEmailText }}</a>
+      <a :href="hiddenEmail().link" class="text-gray-400 hover:underline">{{
+        hiddenEmail().text
+      }}</a>
     </p>
   </div>
 
@@ -30,9 +32,10 @@
 </template>
 
 <script>
-import { defineComponent, ref, computed, onMounted } from 'vue'
+import { defineComponent, ref, onMounted } from 'vue'
 import axios from 'axios'
 import PromptCard from '../components/PromptCard.vue'
+import { hiddenEmail } from '../utils/emailCodec'
 
 export default defineComponent({
   components: {
@@ -40,12 +43,6 @@ export default defineComponent({
   },
   setup() {
     const prompts = ref([])
-
-    const encodedEmail = 'aGVsbG9AbGFyZ2VlbmdsaXNoLmNvbQ==' // Base64
-
-    const decodedEmailText = computed(() => atob(encodedEmail))
-    const decodedEmailLink = computed(() => `mailto:${atob(encodedEmail)}`)
-
     const fetchPrompts = async () => {
       try {
         const response = await axios.get(`${import.meta.env.VITE_API_URL}prompts/`)
@@ -57,7 +54,7 @@ export default defineComponent({
 
     onMounted(fetchPrompts)
 
-    return { prompts, decodedEmailText, decodedEmailLink }
+    return { prompts, hiddenEmail }
   },
 })
 </script>
